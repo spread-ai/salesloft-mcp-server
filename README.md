@@ -7,7 +7,7 @@ A Model Context Protocol (MCP) server that provides full access to the Salesloft
 ### 1. Clone and install dependencies
 
 ```bash
-git clone <repo-url> salesloft-mcp-server
+git clone https://github.com/alyce-spreadai/salesloft-mcp-server salesloft-mcp-server
 cd salesloft-mcp-server
 npm install
 ```
