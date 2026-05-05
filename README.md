@@ -42,8 +42,8 @@ Add the following block to either client — both will pick it up and run the se
 
 **Where to put it:**
 
-- **Claude Code** — add to a project-scoped `.mcp.json` in your workspace root, or to `~/.claude.json` (global) under `mcpServers`.
-- **Claude Desktop** — add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows), then restart the app.
+- **Claude Code** — 
+
 
 After saving, the Salesloft tools (`salesloft_*`) will be available the next time the client launches.
 
