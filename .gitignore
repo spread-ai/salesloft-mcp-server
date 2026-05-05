@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+.mcp.json
+.DS_Store
