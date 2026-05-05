@@ -26,12 +26,14 @@ Generate an API key at https://accounts.salesloft.com/oauth/applications
 
 Add the following block to either client — both will pick it up and run the server automatically. No additional setup required.
 
+> ⚠️ **You must replace `<ABSOLUTE_PATH_TO_REPO>` with the real path on your machine.** Relative paths and `~` will not work — Claude needs an absolute path. From inside the cloned repo, run `pwd` to print it, e.g. `/Users/jane/code/salesloft-mcp-server`.
+
 ```json
 {
   "mcpServers": {
     "salesloft": {
       "command": "node",
-      "args": ["/absolute/path/to/salesloft-mcp-server/dist/index.js"],
+      "args": ["<ABSOLUTE_PATH_TO_REPO>/dist/index.js"],
       "env": {
         "SALESLOFT_API_KEY": "your-api-key-here"
       }
