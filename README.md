@@ -22,9 +22,9 @@ npm run build
 
 Generate an API key at https://accounts.salesloft.com/oauth/applications
 
-### 4. Configure in Claude Code
+### 4. Configure in Claude Code or Claude Desktop
 
-Add to your Claude Code settings (`.claude/settings.json` or global settings):
+Add the following block to either client — both will pick it up and run the server automatically. No additional setup required.
 
 ```json
 {
@@ -40,7 +40,12 @@ Add to your Claude Code settings (`.claude/settings.json` or global settings):
 }
 ```
 
-Or for Claude Desktop, add to `~/Library/Application Support/Claude/claude_desktop_config.json`.
+**Where to put it:**
+
+- **Claude Code** — add to a project-scoped `.mcp.json` in your workspace root, or to `~/.claude.json` (global) under `mcpServers`.
+- **Claude Desktop** — add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows), then restart the app.
+
+After saving, the Salesloft tools (`salesloft_*`) will be available the next time the client launches.
 
 ## Available Tools (~60 tools)
 
