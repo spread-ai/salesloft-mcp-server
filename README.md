@@ -2,12 +2,14 @@
 
 A Model Context Protocol (MCP) server that provides full access to the Salesloft REST API v2. Enables Claude and other MCP clients to manage people, accounts, cadences, activities, opportunities, and more.
 
+> **Home:** `spread-ai/salesloft-mcp-server` (moved here 2026-05-22 from `Spread-Out/salesloft-mcp-server`, originally `alyce-spreadai/salesloft-mcp-server`). If you cloned from one of the old URLs, repoint your remote: `git remote set-url origin https://github.com/spread-ai/salesloft-mcp-server.git`.
+
 ## Setup
 
 ### 1. Clone and install dependencies
 
 ```bash
-git clone https://github.com/alyce-spreadai/salesloft-mcp-server salesloft-mcp-server
+git clone https://github.com/spread-ai/salesloft-mcp-server.git
 cd salesloft-mcp-server
 npm install
 ```
@@ -44,8 +46,10 @@ Add the following block to either client — both will pick it up and run the se
 
 **Where to put it:**
 
-- **Claude Code** — 
-
+- **Claude Code** — run `claude mcp add-json salesloft '<the JSON object above, just the inner block>'` from your terminal, or paste the inner block under `mcpServers.salesloft` in `~/.claude.json`.
+- **Claude Desktop** — paste the full block into:
+  - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+  - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 
 After saving, the Salesloft tools (`salesloft_*`) will be available the next time the client launches.
 
